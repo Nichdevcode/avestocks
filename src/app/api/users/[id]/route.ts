@@ -68,6 +68,17 @@ export async function DELETE(req: NextRequest, { params }: { params: { id: strin
     }
 
 
+
+    const thisuser = await UserModel.findById(id);
+
+    if (!thisuser) {
+      return NextResponse.json({ message: 'user not found' }, { status: 400 });
+    }
+
+    if (thisuser.is_admin) {
+      return NextResponse.json({ message: 'Admin Account Cannot be Deleted By You' }, { status: 400 });
+    }
+
     const user = await UserModel.findByIdAndDelete(id).lean();
 
     if (!user) {
@@ -76,7 +87,6 @@ export async function DELETE(req: NextRequest, { params }: { params: { id: strin
           
     return NextResponse.json(user, { status: 200 });
 
-    // return res.status(200).json({ users: allUsers });
   } catch (error) {
     console.error(error);
     // return res.status(500).json({ message: 'Internal server error' });

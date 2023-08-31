@@ -11,6 +11,8 @@ export default function ContextAuthHOC(
         const session = useAuthContext();
         const router = useRouter();
 
+        console.log({ session })
+
         useEffect(() => {
             if (!session?.isLoggedIn) {
                 router.push("/login");

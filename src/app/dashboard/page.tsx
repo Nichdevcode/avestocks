@@ -36,7 +36,7 @@ const Home = () => {
 
   const user = context?.user
 
-  // console.log({ dashboard: user})
+  console.log({ dashboard: user})
 
   
   const { data: wallets, error, isLoading, isFetching, remove, fetchStatus } = useFetch<IWallet[]>({api: apiGetWallets, key: ['wallets'] })
@@ -49,7 +49,7 @@ const Home = () => {
     },
    })
 
-  //  console.log({ userDetails })
+   console.log({ userDetails })
 
   const columns: ITableColumn[] = [
     {
