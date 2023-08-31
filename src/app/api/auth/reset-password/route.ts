@@ -29,7 +29,7 @@ export async function POST(req: Request) {
         }
 
         const user = await UserModel.findOne({
-              email: credentials.email ? credentials.email : '' ,
+              email: credentials.email ? credentials.email.trim().toLowerCase() : '' ,
         });
 
         if (!user) {

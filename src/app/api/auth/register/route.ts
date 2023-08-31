@@ -36,7 +36,7 @@ export async function POST(req: Request, res: NextApiResponse) {
         }
 
         const userExists = await User.findOne({
-                 email: body.email ? body.email : '',
+                 email: body.email ? body.email.trim().toLowerCase() : '' ,
         });
 
         if (userExists) {

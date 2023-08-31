@@ -24,8 +24,9 @@ export async function POST(req: Request) {
         }
 
         const user = await UserModel.findOne({
-              email: credentials.email ? credentials.email : '' ,
+              email: credentials.email ? credentials.email.trim().toLowerCase() : '' ,
         });
+        
 
         if (!user) {
             return NextResponse.json({ message: 'Invalid User' }, { status: 400 });
