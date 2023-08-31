@@ -125,7 +125,7 @@ const Deposit = () => {
                       <span>{deposit.status}</span>
                     </div>
                     <div className="flex justify-between flex-items-center">
-                      <span>{formatDate(deposit.createdAt)}</span>
+                      <span>{formatDate(deposit.createdAt) || '')}</span>
                       <span>{user?.symbol || "$"}{deposit.amount}</span>
                     </div>
                   </div>

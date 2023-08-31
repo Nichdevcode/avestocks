@@ -12,7 +12,7 @@ import { NextApiRequest } from "next";
 // ----------------------------------------------------------------------
 
 
-export async function GET(req: NextApiRequest) {
+export async function GET() {
     try {
         await dbConnect();
         // const session = await getServerSession(authOptions)
