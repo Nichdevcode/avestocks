@@ -1,0 +1,34 @@
+{
+    "currencies": [
+    {
+      "code": "AUD",
+      "name": "Austrillian Dollar",
+      "symbol": "$"
+    },
+    {
+      "code": "BWP",
+      "name": "Botswana Pula",
+      "symbol": "P"
+    },
+    {
+      "code": "EUR",
+      "name": "Euro",
+      "symbol": "€"
+    },
+    {
+      "code": "GBP",
+      "name": "British Pound",
+      "symbol": "£"
+    },
+    {
+      "code": "USD",
+      "name": "US Dollar",
+      "symbol": "$"
+    },
+    {
+      "code": "ZAR",
+      "name": "South African Rand",
+      "symbol": "R"
+    }
+  ]
+}
