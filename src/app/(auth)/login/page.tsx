@@ -44,9 +44,12 @@ const loginMutation = useMutation<IUserLogin, any>(
   apiLogin,
   {
     onSuccess: (data) => {
-        // console.log("data", data)
+        console.log("data", data)
 
-        const symbol = currenciesData?.currencies?.find((currency) => currency?.code === data?.currency)
+        const symbol = currenciesData?.currencies?.find((currency) => currency?.code === data?.user?.currency)
+
+        console.log({ symbol: symbol?.symbol  })
+        data.user.symbol = symbol?.symbol || "$",
   
         context.dispatch({ type: "LOGIN", payload: {
           symbol: symbol?.symbol || "$",

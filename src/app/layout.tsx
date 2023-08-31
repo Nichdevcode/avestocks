@@ -34,8 +34,8 @@ export default function RootLayout({
         </QueryProvider>
         </AuthContextProvider>
       {/* </NextAuthSesssionProvider> */}
+      <script src="//code.tidio.co/elzxmzhho7bvam4tizzwespxis9lot9u.js" async></script>
       </body>
-      <script src="//code.tidio.co/rxugetpnoymrsm0pyhudpw5nzwkwegsj.js" async></script>
     </html>
   )
 }

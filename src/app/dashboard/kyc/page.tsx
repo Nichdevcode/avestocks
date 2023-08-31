@@ -84,7 +84,7 @@ const Deposit = () => {
   // console.log({ user })
 
   return (
-    <main className='relative p-4 overflow-y-auto md:p-6'>
+    <main className='relative p-4 pt-2 overflow-y-auto md:p-6'>
       {
         (kycVerifcation?.isLoading) && <GentleLoader />
       }

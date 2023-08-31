@@ -40,7 +40,7 @@ const Refer = () => {
 
 
   return (
-    <main className='relative p-4 overflow-y-auto md:p-6'>
+    <main className='relative p-4 pt-2 overflow-y-auto md:p-6'>
       <h2 className='mb-6 text-lg font-semibold'>{t?.title || "Referral Program: Share and Earn Together"}</h2>
         
           <div className="flex flex-col gap-1 p-4 bg-white rounded-md shadow-md min-w-[200px] mb-6">

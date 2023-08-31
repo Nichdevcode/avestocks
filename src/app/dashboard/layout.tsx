@@ -13,9 +13,9 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
       <div className='flex w-full h-screen overflow-hidden'>
         <SideNav />
-        <div className="relative flex-1 pb-10 overflow-hidden overflow-y-auto pt-14 sm:pt-8 sm:pb-0 hide-scroll sm:ml-60 bg-black/5">
+        <div className="relative flex-1 pb-10 overflow-hidden overflow-y-auto pt-14 sm:pt-16 sm:pb-0 hide-scroll sm:ml-60 bg-black/5">
           <Head />
-         <TickerTape displayMode="regular" colorTheme="light"></TickerTape>
+          <TickerTape displayMode="regular" colorTheme="light"></TickerTape>
           {children}
         </div>
         {/* <div className="relative flex-1 pb-10 overflow-hidden overflow-y-auto">

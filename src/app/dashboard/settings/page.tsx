@@ -107,7 +107,7 @@ const Settings = () => {
   }
 
   return (
-    <main className='relative p-4 overflow-y-auto md:p-6'>
+    <main className='relative p-4 pt-2 overflow-y-auto md:p-6'>
       {
         (updateUser?.isLoading || updatePassword?.isLoading) && 
         <div className="absolute top-0 left-0 z-50 flex items-center justify-center w-full h-full bg-white bg-opacity-50">
