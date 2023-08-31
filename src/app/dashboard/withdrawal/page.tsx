@@ -110,7 +110,7 @@ const Withdrawal = () => {
                       <span>{withdrawal.status}</span>
                     </div>
                     <div className="flex justify-between flex-items-center">
-                      <span>{formatDate(withdrawal.createdAt) || '')}</span>
+                      <span>{formatDate(withdrawal.createdAt || '')}</span>
                       <span>{user?.symbol || "$"}{withdrawal.amount}</span>
                     </div>
                   </div>
